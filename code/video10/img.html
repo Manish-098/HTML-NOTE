@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>img element</h1>
+    <!-- <img src="../video9/images1.jpg" alt="photo" width="400" height="auto" /> -->
+    <picture>
+      <source media="(min-width:650px)" srcset="photo/a.jpeg" />
+      <source media="(min-width:450px)" srcset="photo/b.jpeg" />
+      <img src="photo/c.jpeg" />
+    </picture>
+
+    <img src="photo/computer.jpeg" alt="computer" usemap="#computerMap" />
+
+    <map name="computerMap">
+      <!-- Monitor -->
+      <area
+        shape="rect"
+        coords="15,8,215,120"
+        href="moniter.html"
+        alt="Monitor"
+        title="Monitor"
+      />
+
+      <!-- Mouse -->
+      <area
+        shape="poly"
+        coords="198,180,210,173,225,175,238,185,233,198,215,202,200,196"
+        href="mouse.html"
+        alt="Mouse"
+        title="Mouse"
+      />
+    </map>
+  </body>
+</html>
