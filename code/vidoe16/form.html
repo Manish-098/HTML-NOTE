@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="demo.html" method="POST">
+      <fieldset>
+        <legend>info</legend>
+        <label>Name: <input type="text" name="fname" /> </label><br /><br />
+        <label>Password: <input type="password" name="pass" id="pass" /></label
+        ><br /><br />
+      </fieldset>
+      <label>
+        Select your State:-
+        <select>
+          <option value="Select State">Select State</option>
+          <option value="UP">UP</option>
+          <option value="Delhi">Dehli</option>
+          <option value="MP">MP</option>
+          <option value="Bihar">Bihar</option>
+        </select> </label
+      ><br /><br />
+      <label>
+        Give me Feedback:-
+        <textarea name="" id="" rows="10" cols="30"></textarea></label
+      ><br /><br />
+      <label>
+        Select District:-
+        <input list="drop" />
+        <datalist id="drop">
+          <option value="Deoria">Deoria</option>
+          <option value="Kushinagar">Kushinagar</option>
+          <option value="Gorkhpur">Gorkhpur</option>
+          <option value="MaharajGanj">MaharajGanj</option>
+        </datalist>
+      </label>
+      <button type="submit">Submit</button> <button type="reset">Reset</button>
+      <button type="button">Click</button>
+      <button>submit</button>
+    </form>
+  </body>
+</html>
