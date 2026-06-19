@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Attribute</title>
+  </head>
+  <body>
+    <h1>Input Attribute</h1>
+
+    <form action="demo.html">
+      <label>
+        Name:
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your Name"
+          size="50"
+        />
+        <!-- Default value of size is 50 --> </label
+      ><br /><br />
+      <label>
+        Father's name:
+        <input
+          type="text"
+          name="fname"
+          value="World Computer Academy"
+          disabled
+        /> </label
+      ><br /><br />
+      <label>
+        Mother Name:
+        <input type="text" name="mname" maxlength="10" required /> </label
+      ><br /><br />
+      <label> Age: <input type="number" name="age" min="18" max="45" /> </label
+      ><br /><br />
+      <label> choose File: <input type="file" name="file" multiple /> </label
+      ><br /><br />
+      <label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your Email"
+        /> </label
+      ><br /><br />
+      <label>Choose Number: <input type="number" name="point" step="4" /></label
+      ><br /><br />
+      <label>Autofocus: <input type="text" name="Autofocus" autofocus /></label
+      ><br /><br />
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+    <h1>Pattern Attribute</h1>
+    <form action="hello.html">
+      <label>
+        Name: <input type="text" name="fname" pattern="[0-9]{10}" />
+      </label>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
